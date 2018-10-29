@@ -1,0 +1,162 @@
+#cart {
+	padding-top:30px;
+	margin-bottom:120px;
+}
+
+.cart__title_num{
+	text-align:center;
+}
+
+.cart {
+	&-bread-crumbs {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		& .bread-crumbs {
+			margin-top: 0;
+		}
+	}
+	&__print {
+		margin-left:20px;
+		cursor:pointer;
+	}
+	.date {
+		width: 50px;
+	    display: flex;
+	    justify-content: space-between;
+		object {
+			&:hover {
+				cursor: pointer;
+			}		
+		}
+	}
+	&-wrap {
+		margin-top:20px;
+		border:1px solid #eaeaea;
+		border-radius: 3px;
+		&__top {
+			padding:10px 20px;
+			background:#f7f7f7;
+			border-top-left-radius: 3px;
+		    border-top-right-radius: 3px;
+		    & h4 {
+				margin-bottom:0;
+		    }
+		}
+		&__body {
+			padding:20px;
+			&_title {
+				& th {
+					font-weight: 400;
+					font-size: 12px;
+				}
+			}
+			&_img {
+				border-radius: 3px;
+			}
+			&_title {
+				font-size: 16px;
+			}
+			&_color {
+				font-size:12px;
+			}
+			&_size {
+				font-size:12px;
+			}
+			&_price {
+				font-weight:700;
+				font-size:16px;
+			}
+			&_del {
+				color:#ccc;
+				font-size:12px;
+				cursor:pointer;
+				margin-top:12px;
+				display:block;
+			}
+		}
+		&__changer {
+			display:flex;
+			flex-flow: row wrap;
+			&_change {
+				font-size:12px;
+				color:#ccc;
+				width:20px;
+				height:20px;
+				text-align:center;
+				border:1px solid #ccc;
+				border-radius:50px;
+				display:block;
+				cursor:pointer;
+			}
+			&_input {
+				width:30px;
+				height:20px;
+				text-align:center;
+				font-size:12px;
+				border:1px solid #ccc;
+				border-radius:3px;
+				margin:0 10px;
+			}
+		}
+	}
+	&-form {
+		border:1px solid #eaeaea;
+		border-radius: 3px;
+		&__hat {
+			padding:10px 20px;
+			background:#f5f5f5;
+			font-size: 16px;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		&__body {
+			padding:20px;
+		}
+		&__price {
+			font-size:24px;
+			line-height:28px;
+			margin-bottom:13px;
+			text-align:center;
+			display: block;
+		}
+		&__underprice{
+			font-size:14px;
+			text-align:center;
+			display: block;
+			color: #999;
+			margin-bottom: 19px;
+		}
+		&__input {
+			width:100%;
+			border:1px solid #eaeaea;
+			height:40px;
+			border-radius:3px;
+			padding-left:15px;
+			margin-bottom: 20px;
+		}
+		&__comment {
+			width:100%;
+			padding:10px;
+			height:100px;
+			border-radius: 3px;
+			border: 1px solid #eaeaea;
+		}
+		&__agree {
+			font-size:10px;
+			margin:20px 0;
+			display:flex;
+			flex-flow:row wrap;
+			align-items:center;
+			cursor: pointer;
+			color: #999;
+			& input {
+				margin-right: 10px;
+			}
+		}
+		.cta-btn__full{
+			width:100%;
+		}
+	}
+}

@@ -1,0 +1,323 @@
+
+/*---------------SPECIFICATION-----------------*/
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*Main Specification*/
+
+@import "_specification";
+
+/*Old Item*/
+
+@import "_old-item";
+
+/*Bread Crumbs*/
+
+@import "_bread-crumbs";
+
+/*Bread Crumbs*/
+
+@import "_btns";
+
+/*Big-set*/
+
+@import "_big-set";
+
+/*Selector*/
+
+@import "_selector";
+
+/*Selector*/
+
+@import "_slider-arrows";
+
+/*Pangination*/
+
+@import "_pangination";
+
+/*Tags*/
+
+@import "_tags";
+
+/*Labels*/
+
+@import "_labels";
+
+/*Share*/
+
+@import "_share";
+
+/*Product*/
+
+@import "_product";
+
+/*Review-block*/
+
+@import "_review-block";
+
+/*Banners*/
+
+@import "_banners";
+
+/*Product-slider*/
+
+@import "_product-slider";
+
+/*Tabs*/
+
+@import "_tabs";
+
+/*Compare-mini*/
+
+@import "_compare-mini";
+
+/*Contacts Info */
+
+@import "_contacts-info";
+
+/*form send error*/
+
+@import "_send-error";
+
+/*variables*/
+
+@import "_variables";
+
+
+/* /////////////////// card-present /////////////////// */
+
+@import "_card";
+
+/*modals*/
+
+@import "_modal";
+
+/*Personal area*/
+
+@import "_pers-area";
+
+/*Common*/
+
+@import "_common";
+
+/*Filter*/
+
+@import "_filter";
+
+/*media*/
+
+@import "_media";
+
+/*---------------HEADER-----------------*/
+
+@import "_header";
+
+@import "_header-menu";
+
+/*---------------MAIN PAGE-----------------*/
+
+/*/////////////////Popular Section//////////////*/
+
+@import "_popular";
+
+/*/////////////////Wrap Section//////////////*/
+
+@import "_wrap";
+
+/*/////////////////Sale Section//////////////*/
+
+@import "_sale";
+
+/*/////////////////Ready Section//////////////*/
+
+@import "_ready";
+
+/*/////////////////Interesting Section//////////////*/
+
+@import "_interesting";
+
+/*/////////////////Coupons Section//////////////*/
+
+@import "_coupons";
+
+/*/////////////////Recommendation Section//////////////*/
+
+@import "_recommendation";
+
+/*/////////////////Company Section//////////////*/
+
+@import "_company";
+
+/*/////////////////About Section//////////////*/
+
+@import "_about";
+
+/*---------------BLOG PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+@import "_blog";
+
+/*Blog Category*/
+
+@import "_blog-category";
+
+/*/////////////////Articles Section//////////////*/
+
+@import "_articles";
+
+/*---------------LISTING PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+@import "_listing";
+
+/*---------------COMPARE PAGE-----------------*/
+
+/*/////////////////Compare//////////////*/
+
+@import "_compare";
+
+/*---------------FAVORITES PAGE-----------------*/
+
+/*/////////////////Favorite//////////////*/
+
+@import "_favorites";
+
+/*---------------EMPTY SEARCH-----------------*/
+
+@import "_no-result";
+
+/*---------------PAGE ERROR-----------------*/
+
+@import "_error";
+
+/*---------------EMPTY CART-----------------*/
+
+@import "_empty";
+
+/*---------------EMPTY PAGES-----------------*/
+
+@import "_empty-pages";
+
+/*---------------THANKS PAGE-----------------*/
+
+@import "_thanks";
+
+/*---------------CART PAGE-----------------*/
+
+@import "_cart";
+
+/*---------------SET PAGE-----------------*/
+
+/*/////////////////Set Section//////////////*/
+
+@import "_set";
+
+/*/////////////////Composition Section//////////////*/
+
+@import "_composition";
+
+/*Composition Card*/
+
+@import "_composition-card";
+
+/*Composition Card*/
+
+@import "_composition-total";
+
+/*---------------SET LISTING PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+@import "_set-listing";
+
+/*---------------CONTACTS PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+@import "_contacts";
+
+/*---------------CARD PAGE-----------------*/
+
+@import "_card-wrap";
+
+/*/////////////////Variants Section//////////////*/
+
+@import "_card-main";
+
+/*Card-Slider*/
+
+@import "_card-slider";
+
+/*Card-Descr*/
+
+@import "_card-descr";
+
+/*Card-rating*/
+
+@import "_card-rating";
+
+/*/////////////////Variants Section//////////////*/
+
+@import "_card-variants";
+
+/*/////////////////Variants Section//////////////*/
+
+@import "_card-set";
+
+/*/////////////////Card-Info//////////////*/
+
+@import "_card-info";
+
+/*/////////////////Card-Characteristics//////////////*/
+
+@import "_card-characteristic";
+
+/*/////////////////Card-Fixed//////////////*/
+
+@import "_card-fixed";
+
+/*/////////////////Card-Tags//////////////*/
+
+@import "_card-tags";
+
+/*---------------LISTING PAGE-----------------*/
+
+@import "_products-page";
+
+/*/////////////////Variants Section//////////////*/
+
+/*---------------CONFEDENTIAL PAGE-----------------*/
+
+@import "_confedential";
+
+/*---------------PROMO PAGE-----------------*/
+
+@import "_promo";
+
+@import "_promo-code";
+
+/*---------------PROMO CATALOG PAGE-----------------*/
+
+@import "_promo-catalog";
+
+/*---------------FOOTER-----------------*/
+
+/*Subscribe*/
+
+@import "_subscribe";
+
+/*Watched*/
+
+@import "_watched";
+
+/*Footer*/
+
+@import "_footer";
+
+
+
+.active-block {
+	display: block;
+}

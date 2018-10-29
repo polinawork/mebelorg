@@ -1,0 +1,143 @@
+
+.pangination {
+	&__btns {
+		margin:20px 0 30px 0;
+		display:flex;
+		flex-flow: row wrap;
+		justify-content:space-between;
+		&_list {
+			display:flex;
+			flex-flow: row wrap;
+		}
+		&_btn {
+			font-size:14px;
+			color:#999;
+			text-align:center;
+			height:40px;
+			width: 40px;
+			white-space:nowrap;
+			line-height:40px;
+			border:1px solid #ccc;
+			background: #f7f7f7;
+			display:block;
+			padding:0;
+			border-radius:0;
+			transition:.3s ease;
+			&-back, &-forward {
+				width: 92px;
+				border:1px solid #0077CC;
+				color:#0077CC;
+				background: none;
+				&:hover {
+					background:#0077CC;
+					color:#fff;
+				}
+			}
+			&-back {
+				border-top-left-radius:3px;
+				border-bottom-left-radius:3px;
+			}
+			&-forward {
+				border-top-right-radius:3px;
+				border-bottom-right-radius:3px;
+			}
+			&-num {
+				border-right:none;
+				&:first-child {
+					border-bottom-left-radius: 3px;
+					border-top-left-radius: 3px;
+				}
+				&:last-child {
+					border-bottom-right-radius: 3px;
+					border-top-right-radius: 3px;
+					border-right:1px solid #ccc;
+				}
+				&:hover {
+					background:#0077CC;
+					color:#fff;
+					border: 1px solid #0077CC;
+					border-right: 0px;
+				}
+			}
+		}
+	}
+}
+
+
+// с кнопкой Страницы
+.pangination {
+	&__pages {
+		display: flex;
+		align-items: center;
+		&-text {
+		}
+		&-count {
+			margin: 0 10px;
+			text-align: center;
+			width: 56px;
+			height: 40px;
+			border: 1px solid #CCCCCC;
+			border-radius: 3px;
+			&:focus {
+				border-color: #0077CC;
+			}
+		}
+		&-go {
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			width: 40px;
+			height: 40px;
+			background: #F7F7F7;
+			border: 1px solid #CCCCCC;
+			border-radius: 3px;
+			transition: .3s;
+			cursor: pointer;
+			svg {
+				path {
+					transition: .3s;
+				}
+			}
+			&:hover {
+				background: #0077CC;
+				border-color: #0077CC;
+				svg {
+					path {
+						fill: #fff;
+					}
+				}
+			}
+			// img {
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	left: 50%;
+			// 	transform: translate(-50%,-50%);
+			// 	width: 9px;
+			// 	height: 15px;
+			// }
+		}
+	}
+
+	&__more {
+		margin-bottom: 20px;
+	}
+
+	&__btns {
+		&_list {
+			margin: 0 10px;
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.pangination--pages {
+	.pangination__btns {
+		margin: 0;
+	}
+}

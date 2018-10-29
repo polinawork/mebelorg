@@ -1,0 +1,126 @@
+/* ------------------- PROMO CARD PAGE ------------------- */
+.promo-card {
+  margin-bottom: 100px; }
+  .promo-card .bread-crumbs {
+    margin-bottom: 32px; }
+  .promo-card__item {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 20px;
+    margin-bottom: 22px; }
+    .promo-card__item-bottom {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between; }
+  .promo-card__logo {
+    margin-bottom: 10px; }
+  .promo-card__offers {
+    margin-bottom: 20px; }
+    .promo-card__offers-link {
+      font-size: 12px;
+      color: #0077CC; }
+  .promo-card__title {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .promo-card__date {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .promo-card__text {
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #333333; }
+  .promo-card__sum {
+    font-weight: bold;
+    margin-bottom: 35px; }
+  .promo-card__btn {
+    min-width: 210px;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background: #14af69;
+    border-radius: 3px; }
+    .promo-card__btn:hover {
+      background: #158c56; }
+  .promo-card__worked {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center; }
+    .promo-card__worked-text {
+      margin-right: 20px;
+      line-height: 14px; }
+    .promo-card__worked-likes {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center; }
+      .promo-card__worked-likes span {
+        display: inline-block;
+        margin: 0 10px;
+        color: #14af69;
+        font-weight: bold; }
+    .promo-card__worked-like, .promo-card__worked-dis {
+      cursor: pointer; }
+
+.promo-card__reviews {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 65px; }
+  .promo-card__reviews-send {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex; }
+    .promo-card__reviews-send p {
+      margin-right: 8px; }
+
+.promo-card__shops-content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.promo-card__shops-caption {
+  margin-bottom: 18px; }
+
+.promo-card__shops-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: .3s; }
+  .promo-card__shops-item:hover .promo-card__shops-pic {
+    border-color: #1E91D3; }
+
+.promo-card__shops-pic {
+  margin-bottom: 8px;
+  padding: 7px;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px; }
+
+.promo-card__shops-name {
+  text-align: center;
+  font-size: 14px;
+  color: #0077CC; }
+
+.promo-card__similar {
+  margin-top: 90px;
+  padding: 20px;
+  background: #F7F7F7; }
+  .promo-card__similar-caption {
+    margin-bottom: 10px; }
+  .promo-card__similar-item {
+    display: block;
+    margin-bottom: 15px;
+    color: #333333; }
+    .promo-card__similar-item:last-child {
+      margin-bottom: 0; }
+  .promo-card__similar-title {
+    font-size: 14px;
+    margin-bottom: 0px; }
+  .promo-card__similar-text {
+    font-size: 12px;
+    color: #666666; }

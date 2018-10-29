@@ -1,0 +1,32 @@
+/* блок лень выбирать */
+.send-help {
+  border: 2px solid #FFBB33;
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px 10px;
+
+  &__pic {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin: 0 auto 10px;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  &__btn {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,26 @@
+.selector {
+	width:224px;
+	display:block;
+	margin-right:0;
+	margin-left:auto;
+	position:relative;
+	& img {
+		position:absolute;
+		top:15px;
+		right:13px
+	}
+}
+#selector {
+	width:100%;
+	border:1px solid #ccc;
+	margin-right:0;
+	border-radius: 3px;
+	margin-right:auto;
+	padding:10px 10px 10px 20px;
+	font:400 12px Roboto;
+	cursor:pointer;
+	display:block;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}

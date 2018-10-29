@@ -1,0 +1,133 @@
+
+.card-slider {
+	display: flex;
+	flex-flow: row wrap; 
+	&__nav {
+		&-wrap {
+			padding-top: 30px;
+			margin-left: -120px;
+			padding-bottom: 20px;
+			width: 100px;
+			position: relative;
+			& .wrap__next {
+				bottom: 40px;
+			}
+			& .set__overlay_bottom {
+				bottom: 20px;
+			}
+		}
+		& .slick-slide {
+			height: 100px;
+			border: 1px solid #e6e6e6;
+		}
+		&_slide {
+			margin-bottom: 10px;
+			border-radius: 3px;
+			display: block;
+			cursor: pointer;
+			position: relative;
+			z-index: 2;
+			transition: 0.3s ease;
+			&:hover {
+				border: 1px solid #f90;
+				transition: 0.3s ease;
+			}
+			& img {
+				width: 100%;
+				height: 100%;
+				border-radius: 3px;
+			}
+		}
+		& .slick-current {
+			border: 1px solid #f90;
+		}
+		&_add {
+			text-align: center;
+			display: block;
+			position: relative;
+			z-index: -1;
+			& object {
+				width: 65px;
+				display: inline-block;
+				position: relative;
+			}
+		}
+	}
+	&__main {
+		&-wrap {
+			width: 100%;
+			padding-top: 20px;
+			border-left: 1px solid #eaeaea;
+			position: relative;
+			margin-left: 20px;
+		}
+		& .slick-slide {
+			height: 564px;
+		}
+		&_slide {
+			position: relative;
+			& .product-item__toolbar-item {
+				display: flex;
+			}
+			& img {
+				width: 100%;
+				height: 100%;
+				box-shadow: none !important;
+			}
+		}
+	}
+	&__label {
+		position: absolute;	
+		z-index: 2;
+		color: #fff;
+		font-weight: 700;
+		font-size: 16px;
+		padding: 4px 10px;
+		left: -1px;
+		top: 20px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		&_choice {
+			background: #f90;
+		}
+		&_sale {
+			background: #d21a39;
+			top: 120px;
+		}
+		&_sales {
+			background: #d21a39;
+			top: 70px;
+		}
+	}
+}
+
+
+
+.add-img {
+	margin-left: 19px;
+	margin-top: 8px;
+}
+
+.watch-img {
+	width: 52px !important;
+	margin-left: 0;
+	margin-top: 30px;
+}
+
+.third-img {
+	width: 52px !important;
+	margin-left: 5px;
+	margin-top: 22px;
+}
+	
+.other-card__slider_main-wrap .card-present {
+	height: 56px;
+	bottom: 17px;
+}
+
+.other-card__slider_present {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+}

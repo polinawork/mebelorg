@@ -1,0 +1,33 @@
+.empty-page{
+  .container{
+    position: relative;
+  }
+  &__num{
+    z-index: -1;
+    font-size: 50em;
+    font-weight: bold;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: -.195em;
+    color: #DBF2FF;
+  }
+  &__chrt{
+    font-size: 5em;
+    font-weight: bold;
+    color: $blue;
+    &-2{
+      height: .75em;
+      display: inline-block;
+      width: 2em;
+      border: .15em solid $blue;
+      border-radius: 3px;
+    }
+  }
+  &__title{
+    color: $blue;
+  }
+  &__description{
+    color: $blue;
+  }
+}

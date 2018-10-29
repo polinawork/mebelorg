@@ -1,0 +1,406 @@
+//= template/header.html
+
+		<section id="banner" class=" banner text-center">
+			<div class="banner__text">
+				<h1>Мебельный маркетплейс №1 в России</h1>
+				<p>Успешная торговая площадка России с широчайшим aссортиментом от продавцов со всей страны.
+				</p>
+			</div>
+		</section>
+
+		<section id="short-instruction" class="short-instruction text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Как начать продавать на Mebel.org?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-2 offset-xl-2">
+						<div class="short-instruction__wrap">
+							<div class="short-instruction__wrap-circle circle"></div>
+							<div class="short-instruction__wrap-text text">Создайте сайт<br> или интернет-магазин</div>
+						</div>
+					</div>
+					<div class="col-xl-2 offset-xl-1">
+						<div class="short-instruction__wrap">
+							<div class="short-instruction__wrap-circle circle"></div>
+							<div class="short-instruction__wrap-text text">Добавьте<br> товары или услуги</div>
+						</div>
+					</div>
+					<div class="col-xl-2 offset-xl-1">
+						<div class="short-instruction__wrap">
+							<div class="short-instruction__wrap-circle circle"></div>
+							<div class="short-instruction__wrap-text text">Принимайте<br> заказы с Mebel.org</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="registration" class="registration text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>14 дней бесплатного тестового периода</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<form class="text-left">
+							<div class="registration__fields">
+								<input type="text" name="name-company" placeholder="Название компании">
+								<input type="email" name="email-company" placeholder="E-mail">
+								<button class="button text">Регистрация</button>
+							</div>
+							<div class="registration__agreement">
+								<input type="checkbox" id="agreement" value="agree">
+								<label for="agreement">Я даю согласие на обработку  персональных данных</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="offers" class="offers text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Предложения Mebel.org для роста продаж!</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<div class="offers__positions text text-left">
+							<p>Полнофункциональный интернет-магазин</p>
+							<p>Размещение 10 000 товарных позиций</p>
+							<p>Возможность расширения количества позиций</p>
+							<p>Поддержка персонального менеджера</p>
+						</div>
+					</div>
+					<div class="col-9">
+						<div class="offers__table">
+							<div class="row">
+								<div class="col-4">
+									<div class="offers__tariff">
+										<div class="offers__name-wrap">
+											<div class="offers__name-wrap_circle circle"></div>
+											<div class="offers__name-wrap_text text">Стартовый</div>
+										</div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-no-active"></div><hr>
+										<div class="offers__point-no-active"></div><hr>
+										<div class="offers__price text">Бесплатно</div>
+										<button type="button" class="btn btn-primary button text" data-toggle="modal" data-target="#modal-starting">Регистрация</button>
+									</div>
+								</div>
+
+								<div class="col-4">
+									<div class="offers__tariff">
+										<div class="offers__name-wrap">
+											<div class="offers__name-wrap_circle circle"></div>
+											<div class="offers__name-wrap_text text">Начальный</div>
+										</div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-no-active"></div><hr>
+										<div class="offers__price text">15 000руб./год</div>
+										<button type="button" class="btn btn-primary button text" data-toggle="modal" data-target="#modal-begining">Регистрация</button>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="offers__tariff">
+										<div class="offers__name-wrap">
+											<div class="offers__name-wrap_circle circle"></div>
+											<div class="offers__name-wrap_text text">Профи</div>
+										</div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__point-active"></div><hr>
+										<div class="offers__price text">32 000руб./год</div>
+										<button type="button" class="btn btn-primary button text" data-toggle="modal" data-target="#modal-proff">Регистрация</button>
+									</div>
+								</div>
+							</div>	
+						</div>
+
+						<div class="modal fade modal-tariff" id="modal-starting" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+	  							<div class="modal-content">
+			    					<div class="application-tariff text">
+			    						<h4>Заявка на тариф “Стартовый”</h4>
+			    						<p class="application-tariff__warning">
+			    							При заказе тарифа стартовый ознакомтесь с правилами, которые указаны в описании тарифа
+			    						</p>
+			    						<div class="application-tariff__price">
+			    							<span class="application-tariff__price_title">Стоимость</span>
+			    							<span class="application-tariff__price_number">Бесплатно</span>
+			    						</div>
+			    						<form>
+			    							<input type="text" name="name-company" placeholder="Наименование организации:">
+											<input type="email" name="email-company" placeholder="Адрес электронной почты:">
+											<button class="button text">Заказать</button>
+			    						</form>
+			    					</div>
+			    				</div>
+	  						</div>
+						</div>
+
+						<div class="modal fade modal-tariff" id="modal-begining" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+	  							<div class="modal-content">
+			    					<div class="application-tariff text">
+			    						<h4>Заявка на тариф “Начальный”</h4>
+			    						<p class="application-tariff__warning">
+			    							При заказе тарифа стартовый ознакомтесь с правилами, которые указаны в описании тарифа
+			    						</p>
+			    						<div class="application-tariff__price">
+			    							<span class="application-tariff__price_title">Стоимость</span>
+			    							<span class="application-tariff__price_number">15 000руб./год</span>
+			    						</div>
+			    						<form>
+			    							<input type="text" name="name-company" placeholder="Наименование организации:">
+											<input type="email" name="email-company" placeholder="Адрес электронной почты:">
+											<button class="button text">Заказать</button>
+			    						</form>
+			    					</div>
+			    				</div>
+	  						</div>
+						</div>
+
+						<div class="modal fade modal-tariff" id="modal-proff" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+	  							<div class="modal-content">
+			    					<div class="application-tariff text">
+			    						<h4>Заявка на тариф “Профи”</h4>
+			    						<p class="application-tariff__warning">
+			    							При заказе тарифа стартовый ознакомтесь с правилами, которые указаны в описании тарифа
+			    						</p>
+			    						<div class="application-tariff__price">
+			    							<span class="application-tariff__price_title">Стоимость</span>
+			    							<span class="application-tariff__price_number">32 000руб./год</span>
+			    						</div>
+			    						<form>
+			    							<input type="text" name="name-company" placeholder="Наименование организации:">
+											<input type="email" name="email-company" placeholder="Адрес электронной почты:">
+											<button class="button text">Заказать</button>
+			    						</form>
+			    					</div>
+			    				</div>
+	  						</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<section id="for-business" class="for-business text-left">
+			<div class="container">
+				<div class="row">
+					<div class="col-8 offset-2">
+						<h2>Все, что нужно для ведения бизнеса в интернете</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 offset-2">
+						<div class="for-business__text text text-left">
+							<p>Продвижение</p>
+							<ul>
+								<li>Быстрая индексация в Google и Яндекс</li>
+								<li>Индивидуальные настройки SEO</li>
+								<li>Инструменты web-мастера</li>
+								<li>Статистика и аналитика</li>
+								<li>Безопасность данных</li>
+								<li>Реклама на портале Tiu.ru</li>
+								<li>Email-рассылки</li>
+								<li>Проведение акций и распродаж</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="for-business__text text text-left">
+							<p>E-commerce</p>
+							<ul>
+								<li>Настраиваемая корзина заказов</li>
+								<li>Настройка способов оплаты и доставки</li>
+								<li>Импорт товаров из excel и yml, 1C, Мой склад</li>
+								<li>Обработка и управление заказами</li>
+								<li>Мобильное приложение</li>
+								<li>SMS-уведомления о заказах</li>
+								<li>Управление списком клиентов</li>
+								<li>Онлайн-чаты</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+
+		<section id="reviews" class="text-center reviews">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Отзывы наших клиентов</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-5 offset-1">
+						<div class="reviews__review text-left  text">
+							<div class="reviews__photo-user">
+								<img src="img/review-photo.png" alt="Photo">
+							</div>
+							<div class="reviews__text">
+								<div class="reviews__user">
+									<p>Марина Мудрая</p>
+									<a href=#>Интернет-магазин "МаринаМудрая"</a>
+								</div>
+								<p class="reviews__content">С Tiu.ru уже 3 года, превосходный портал для работы интернет-магазина. Первый же существенный доход, покрывший расходы по пакету, случился в первый же день подключения. Удобство, ненавязчивость, простота, динамичность. Постоянные новшества. Дружелюбное отношение, масса инструментов. В общем, мы довольны и рады сотрудничеству! Спасибо вам, TIU!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="reviews__review  text-left  text">
+							<div class="reviews__photo-user">
+								<img src="img/review-photo.png" alt="Photo">
+							</div>
+							<div class="reviews__text">
+								<div class="reviews__user">
+									<p>Марина Мудрая</p>
+									<a href=#>Интернет-магазин "МаринаМудрая"</a>
+								</div>
+								<p class="reviews__content">С Tiu.ru уже 3 года, превосходный портал для работы интернет-магазина. Первый же существенный доход, покрывший расходы по пакету, случился в первый же день подключения. Удобство, ненавязчивость, простота, динамичность. Постоянные новшества. Дружелюбное отношение, масса инструментов. В общем, мы довольны и рады сотрудничеству! Спасибо вам, TIU!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-5 offset-1">
+						<div class="collapse in hide-me">
+							<div class="reviews__review text-left text">
+								<div class="reviews__photo-user">
+									<img src="img/review-photo.png" alt="Photo">
+								</div>
+								<div class="reviews__text">
+									<div class="reviews__user">
+										<p>Марина Мудрая</p>
+										<a href=#>Интернет-магазин "МаринаМудрая"</a>
+									</div>
+									<p class="reviews__content">С Tiu.ru уже 3 года, превосходный портал для работы интернет-магазина. Первый же существенный доход, покрывший расходы по пакету, случился в первый же день подключения. Удобство, ненавязчивость, простота, динамичность. Постоянные новшества. Дружелюбное отношение, масса инструментов. В общем, мы довольны и рады сотрудничеству! Спасибо вам, TIU!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="collapse in hide-me">
+							<div class="reviews__review text-left text">
+								<div class="reviews__photo-user">
+									<img src="img/review-photo.png" alt="Photo">
+								</div>
+								<div class="reviews__text">
+									<div class="reviews__user">
+										<p>Марина Мудрая</p>
+										<a href=#>Интернет-магазин "МаринаМудрая"</a>
+									</div>
+									<p class="reviews__content">С Tiu.ru уже 3 года, превосходный портал для работы интернет-магазина. Первый же существенный доход, покрывший расходы по пакету, случился в первый же день подключения. Удобство, ненавязчивость, простота, динамичность. Постоянные новшества. Дружелюбное отношение, масса инструментов. В общем, мы довольны и рады сотрудничеству! Спасибо вам, TIU!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<button id="reviews-button" class="button text btn btn-info" data-toggle="collapse" data-target=".hide-me">Все отзывы</button>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="registration" class="registration text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>14 дней бесплатного тестового периода</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<form class="text-left">
+							<div class="registration__fields">
+								<input type="text" name="name-company" placeholder="Название компании">
+								<input type="email" name="email-company" placeholder="Email">
+								<button class="button text">Регистрация</button>
+							</div>
+							<div class="registration__agreement">
+								<input type="checkbox" id="agreement" value="agree">
+								<label for="agreement">Я даю согласие на обработку  персональных данных</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="questions" class="questions text-center text">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2>Часто задаваемые вопросы</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-5 offset-1">
+						<div class="questions__wrap text-left">
+							<div class="questions__circle circle"></div>
+							<div class="questions__question">
+								<h3>По каким вопросам консультирует персональный менеджер?
+								</h3>
+								<p class="questions__text">Персональный менеджер проконсультирует вас по функциональным возможностям портала, расскажет, как использовать инструменты Кабинета компании для создания сайта и продвижения вашей компании в интернете и в каталоге Tiu.ru. <a href=>Подробнее</a></p>
+							</div>
+						</div>
+					</div> 
+					<div class="col-5">
+						<div class="questions__wrap text-left">
+							<div class="questions__circle circle"></div>
+							<div class="questions__question">
+								<h3>По каким вопросам консультирует персональный менеджер?
+								</h3>
+								<p class="questions__text">Персональный менеджер проконсультирует вас по функциональным возможностям портала, расскажет, как использовать инструменты Кабинета компании для создания сайта и продвижения вашей компании в интернете и в каталоге Tiu.ru. <a href="">Подробнее</a></p>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-5 offset-1">
+						<div class="questions__wrap text-left">
+							<div class="questions__circle circle"></div>
+							<div class="questions__question">
+								<h3>По каким вопросам консультирует персональный менеджер?
+								</h3>
+								<p class="questions__text">Персональный менеджер проконсультирует вас по функциональным возможностям портала, расскажет, как использовать инструменты Кабинета компании для создания сайта и продвижения вашей компании в интернете и в каталоге Tiu.ru. <a href="">Подробнее</a></p>
+							</div>
+						</div>
+					</div> 
+					<div class="col-5">
+						<div class="questions__wrap text-left">
+							<div class="questions__circle circle"></div>
+							<div class="questions__question">
+								<h3>По каким вопросам консультирует персональный менеджер?
+								</h3>
+								<p class="questions__text">Персональный менеджер проконсультирует вас по функциональным возможностям портала, расскажет, как использовать инструменты Кабинета компании для создания сайта и продвижения вашей компании в интернете и в каталоге Tiu.ru. <a href="">Подробнее</a></p>
+							</div>
+						</div> 
+				</div>
+			</div>
+		</section>
+
+
+		//= template/footer.html

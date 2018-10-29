@@ -1,0 +1,74 @@
+.composition__card {
+	width: 204px;
+	border: 1px solid #FF9900;
+	border-radius: 3px;
+	padding: 5px;
+	position: relative;
+	cursor: pointer;
+	display: block;
+	margin-top: 20px;
+	& .composition__card_mark {
+		opacity: 1;
+		transition: 0.3s ease;
+	}
+	&_img {
+		width: 100%;
+		transform: scale(1);
+		transition: 0.3s ease;
+	}
+	&_mark {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	&_descr {
+		padding: 12px 7px 8px 7px;
+	}
+	&_title {
+		line-height: 20px;
+	}
+	&_size {
+		font-size: 12px;
+		margin-top: 8px;
+		& span {
+			font-weight: 700;
+		}
+	}
+	&_prices {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-end;
+		margin-top: 8px;
+	}
+	&_now-price {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 19px;
+	}
+	&_last-price {
+		color: #999;
+		text-decoration: line-through;
+		margin-left: 10px;
+		line-height: 16px;
+	}
+	&_none-text {
+		position: absolute;
+		display: block;
+		top: 15px;
+		right: 15px;
+		color: #F41925;
+		background: #FFD1D4;
+		padding: 2px 10px;
+	}	
+	&_none {
+		border: 1px solid #ccc;
+		transition: 0.3s ease;
+		& .composition__card_mark {
+			opacity: 0.2;
+		}
+		& .composition__card_img {
+			transform: scale(0.8);
+			opacity: 0.7;
+		}
+	}
+}

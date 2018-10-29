@@ -1,0 +1,18 @@
+
+.empty {
+	& img {
+		margin-bottom:44px;
+		margin-top: 90px;
+	}
+	& p {
+		line-height:32px;
+		font-size: 16px;
+		width: 547px;
+		margin: 5px auto 22px;
+	}
+	& .cta-btn__full {
+		margin: 0 auto;
+		width: 186px;
+		margin-bottom: 80px;
+	}
+}

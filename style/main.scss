@@ -1,0 +1,429 @@
+$theme-colors: (
+  "primary": #1e91d3,
+  "danger": #ff4136,
+  "success":#14af69,
+);
+
+$body-bg: #fff;
+$body-color: #333;
+
+$blue: #1e91d3;
+$cyan: #BDE7FF;
+
+$grid-gutter-width: 1.25em;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1366px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1366px,
+);
+
+/*
+* Bootstrap
+*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "parteils/_specification_2";
+
+/*
+* Slick slider
+*/
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+/*
+* Fancybox
+*/
+@import "../../node_modules/fancybox/dist/scss/jquery.fancybox.scss";
+
+@import "plugin/hint/hint.scss";
+
+//@import "style.css";
+
+
+
+/*---------------SPECIFICATION-----------------*/
+
+/*Main Specification*/
+
+//@import "parteils/_specification";
+
+/*Old Item*/
+
+@import "parteils/_old-item";
+
+/*Bread Crumbs*/
+
+@import "parteils/_bread-crumbs";
+
+/*Bread Btns*/
+
+@import "parteils/_btns";
+
+@import "parteils/_btn-toggle";
+
+/*Big-set*/
+
+@import "parteils/_big-set";
+
+/*Selector*/
+
+@import "parteils/_selector";
+
+/*Selector*/
+
+@import "parteils/_slider-arrows";
+
+/*Pangination*/
+
+@import "parteils/_pangination";
+
+/*Tags*/
+
+@import "parteils/_tags";
+
+/*Labels*/
+
+@import "parteils/_labels";
+
+/*Share*/
+
+@import "parteils/_share";
+
+/*Product*/
+
+@import "parteils/_product";
+
+/*Review-block*/
+
+@import "parteils/_review-block";
+
+/*Banners*/
+
+@import "parteils/_banners";
+
+/*Product-slider*/
+
+@import "parteils/_product-slider";
+
+/*Tabs*/
+
+@import "parteils/_tabs";
+
+/*Compare-mini*/
+
+@import "parteils/_compare-mini";
+
+/*Contacts Info */
+
+@import "parteils/_contacts-info";
+
+/*form send error*/
+
+@import "parteils/_send-error";
+
+/*variables*/
+
+@import "parteils/_variables";
+
+
+/* /////////////////// card-present /////////////////// */
+
+@import "parteils/_card";
+
+/*modals*/
+
+@import "parteils/_modal";
+
+@import "parteils/_modal-personal";
+
+/*Personal area*/
+
+@import "parteils/_pers-area";
+
+/*Common*/
+
+@import "parteils/_common";
+
+/*Filter*/
+
+@import "parteils/_filter";
+
+/*media*/
+
+@import "parteils/_media";
+
+/*---------------HEADER-----------------*/
+
+@import "parteils/_header";
+
+@import "parteils/_header-menu";
+
+/*---------------MAIN PAGE-----------------*/
+
+/*/////////////////Popular Section//////////////*/
+
+@import "parteils/_popular";
+
+/*/////////////////Wrap Section//////////////*/
+
+@import "parteils/_wrap";
+
+/*/////////////////Sale Section//////////////*/
+
+@import "parteils/_sale";
+
+/*/////////////////Ready Section//////////////*/
+
+@import "parteils/_ready";
+
+/*/////////////////Interesting Section//////////////*/
+
+@import "parteils/_interesting";
+
+/*/////////////////Coupons Section//////////////*/
+
+@import "parteils/_coupons";
+
+/*/////////////////Recommendation Section//////////////*/
+
+@import "parteils/_recommendation";
+
+/*/////////////////Company Section//////////////*/
+
+@import "parteils/_company";
+
+/*/////////////////About Section//////////////*/
+
+@import "parteils/_about";
+
+/*---------------BLOG PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+//@import "parteils/_blog-old";
+
+@import "parteils/_blog";
+
+@import "parteils/_same-articles";
+
+@import "parteils/_recomendation-goods";
+
+@import "parteils/_news";
+
+/*Blog Category*/
+
+@import "parteils/_blog-category";
+
+/*/////////////////Articles Section//////////////*/
+
+@import "parteils/_articles";
+
+/*---------------LISTING PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+@import "parteils/_listing";
+
+/*---------------COMPARE PAGE-----------------*/
+
+/*/////////////////Compare//////////////*/
+
+@import "parteils/_compare";
+
+/*---------------FAVORITES PAGE-----------------*/
+
+/*/////////////////Favorite//////////////*/
+
+@import "parteils/_favorites";
+
+/*---------------EMPTY SEARCH-----------------*/
+
+@import "parteils/_no-result";
+
+/*---------------PAGE ERROR-----------------*/
+
+@import "parteils/_error";
+
+/*---------------EMPTY CART-----------------*/
+
+@import "parteils/_empty";
+
+/*---------------EMPTY PAGES-----------------*/
+
+@import "parteils/_empty-pages";
+
+/*---------------THANKS PAGE-----------------*/
+
+@import "parteils/_thanks";
+
+/*---------------CART PAGE-----------------*/
+
+@import "parteils/_cart";
+
+/*---------------SET PAGE-----------------*/
+
+/*/////////////////Set Section//////////////*/
+
+@import "parteils/_set";
+
+/*/////////////////Composition Section//////////////*/
+
+@import "parteils/_composition";
+
+/*Composition Card*/
+
+@import "parteils/_composition-card";
+
+/*Composition Card*/
+
+@import "parteils/_composition-total";
+
+/*---------------SET LISTING PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+@import "parteils/_set-listing";
+
+@import "parteils/_complects";
+
+/*---------------CONTACTS PAGE-----------------*/
+
+/*/////////////////Blog Section//////////////*/
+
+@import "parteils/_contacts";
+
+/*---------------CARD PAGE-----------------*/
+
+@import "parteils/_card-wrap";
+
+/*/////////////////Variants Section//////////////*/
+
+@import "parteils/_card-main";
+
+/*Card-Slider*/
+
+@import "parteils/_card-slider";
+
+/*Card-Descr*/
+
+@import "parteils/_card-descr";
+
+/*Card-rating*/
+
+@import "parteils/_card-rating";
+
+/*/////////////////Variants Section//////////////*/
+
+@import "parteils/_card-variants";
+
+/*/////////////////Variants Section//////////////*/
+
+@import "parteils/_card-set";
+
+/*/////////////////Card-Info//////////////*/
+
+@import "parteils/_card-info";
+
+/*/////////////////Card-Characteristics//////////////*/
+
+@import "parteils/_card-characteristic";
+
+/*/////////////////Card-Fixed//////////////*/
+
+@import "parteils/_card-fixed";
+
+/*/////////////////Card-Tags//////////////*/
+
+@import "parteils/_card-tags";
+
+/*---------------LISTING PAGE-----------------*/
+
+@import "parteils/_products-page";
+
+/*/////////////////Variants Section//////////////*/
+
+/*---------------CONFEDENTIAL PAGE-----------------*/
+
+@import "parteils/_confedential";
+
+/*---------------PROMO PAGE-----------------*/
+
+@import "parteils/_promo";
+
+@import "parteils/_promo-code";
+
+@import "parteils/_promo-usage";
+
+@import "parteils/_promo-cards&coups";
+
+@import "parteils/_coupser";
+@import "parteils/_promo-shop";
+
+/*---------------PROMO CATALOG PAGE-----------------*/
+
+@import "parteils/_promo-catalog";
+
+/*---------------MANUFACTURES PAGE-----------------*/
+
+@import "parteils/_new-manufactures";
+
+@import "parteils/_manufacture-new";
+
+/*---------------SITE TEMP PAGE-----------------*/
+
+@import "parteils/_site-temp";
+
+/*---------------MANUFACTURES PAGE-----------------*/
+
+@import "parteils/_how-to-sale";
+
+/*---------------JOURNAL PAGE-----------------*/
+
+@import "parteils/_journals";
+
+/*---------------APPLICATION PAGE-----------------*/
+
+@import "parteils/_selection-furniture";
+
+/*---------------MERCHANT PAGE-----------------*/
+
+@import "parteils/_merchant";
+
+/*---------------CENTER PAGE-----------------*/
+
+@import "parteils/_center";
+
+/*---------------CENTER PAGE-----------------*/
+
+@import "parteils/_empty-page";
+
+/*---------------FOOTER-----------------*/
+
+/*Subscribe*/
+
+@import "parteils/_subscribe";
+
+/*Watched*/
+
+@import "parteils/_watched";
+
+/*Footer*/
+
+@import "parteils/_footer";
+
+/*CMS*/
+
+@import "parteils/_cms";
+
+
+/*  -------------------------------- */

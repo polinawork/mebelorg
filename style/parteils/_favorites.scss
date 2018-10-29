@@ -1,0 +1,38 @@
+
+#favorites {
+	padding-bottom:30px;
+	& h1 {
+		margin-bottom: 10px;
+	}
+}
+
+.favorites {
+	&__content {
+		display: flex;
+		flex-flow: row wrap;
+		margin-left: -10px;
+		margin-right: -10px;
+		& .product {
+			margin: 20px 10px 0;
+		}
+	}
+}
+
+.no-favorites {
+	&__content {
+		& h2 {
+			width: 336px;
+			display: block;
+			margin: 0 auto;
+		}
+		& img {
+			width: 89px;
+			display: block;
+			margin: 80px auto 24px;
+		}
+		& .cta-btn__full {
+			width: 220px;
+			margin: 40px auto 100px;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+#interesting {
+	padding-top:57px;
+	& h2 {
+		margin-bottom:13px;
+	}
+}
+
+.interesting {
+	&__wrapper {
+		display:none;
+		margin-top: 26px;
+	}
+	&__wrap {
+		width:100%;
+		color:#333;
+		margin-bottom:20px;
+		display:flex;
+		flex-flow: row wrap;
+		align-items:center;
+		transition:.3s ease;
+		&:hover {
+			color:inherit;
+			border-color:#ffbb25;
+			transition:.3s ease;
+		}
+		& img {
+			border-radius: 3px;
+			width: 100%;
+		}
+	}
+	&__title {
+		font-size:14px;
+		line-height:19px;
+		font-weight: 700;
+		margin: 13px 0 9px 0;
+	}
+	&__text {
+		font-size:14px;
+		line-height:20px;
+		color: #999;
+	}
+	&__small-img {
+		margin-right:20px;
+	}
+	&__descr {
+		max-width:190px;
+		font-size:16px;
+		line-height:23px;
+	}
+}

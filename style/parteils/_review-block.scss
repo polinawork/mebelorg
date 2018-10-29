@@ -1,0 +1,37 @@
+.review-block {
+  display: flex;
+  flex-flow: row-wrap;
+  align-items: center;
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    span {
+      line-height: 18px;
+      font-size: 14px;
+      color: #666666;
+    }
+  }
+
+  &__comment {
+    display: flex;
+    align-items: center;
+
+    &-pic {
+      display: flex;
+      // margin-right: 6px;
+      margin-right: 0;
+
+      svg {
+        margin: auto;
+      }
+    }
+
+    span {
+      color: #666666;
+      line-height: 20px;
+    }
+  }
+}

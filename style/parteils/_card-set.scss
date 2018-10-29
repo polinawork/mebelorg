@@ -1,0 +1,71 @@
+
+#card-set {
+	& .composition__card {
+		width: 140px;
+		margin-top: 0;
+		&_descr {
+			padding-top: 0;
+			padding-bottom: 5px;
+		}
+		&_img {
+			padding: 10px;
+		}
+		&_title {
+			font-size: 12px;
+			height: 32px;
+			line-height: 17px;
+			overflow: hidden;
+		}
+	}
+}
+
+
+.card-set {
+	position: relative;
+	&__first {
+		margin-top: -46px;
+	}
+	&__fixed {
+		top: 87px;
+		left: 0;
+		width: 180px;
+		&_img {
+			width: 100%;
+		}
+		&_name {
+			font-weight: 700;
+			margin-top: 13px;
+			margin-bottom: 18px;
+		}
+		&_item {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			margin-bottom: 12px;
+			&-name {
+				font-size: 12px;
+				width: 160px;
+				line-height: 19px;
+				color: #333;
+				transition: 0.3s ease;
+				&:hover {
+					color:#333;
+				}
+			}
+			&-cancel {
+				cursor: pointer;
+			}
+		}
+		&_total, &_total-price {
+			font-weight: 700;
+		}
+		&_total {
+			&-price {
+				font-size: 18px;
+			}
+		}
+	}
+	& .cta-btn__full {
+		width: 100%;
+	}
+}

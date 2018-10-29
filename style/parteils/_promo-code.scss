@@ -1,0 +1,485 @@
+
+@import "_old-promo";
+
+
+$green: #14af69;
+$green_dark:  #158c56;
+$grey_1:#F7F7F7;
+$grey_2:#eaeaea;
+$grey_3:#666;
+$grey_4:#333;
+
+
+
+
+*{
+  transition: .2s all;
+}
+.cards {
+  &__count{
+    color: #808080;
+    padding: 30px 0;
+  }
+  &__item{
+    text-align: center;
+    position: relative;
+    border: 1px solid $grey_2;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px;
+    &:hover{
+      border-color: $green;
+      .cards__offers{
+        background: rgba(20, 175, 105, 1);
+        color:$grey_1;
+      }
+    }
+  }
+  &__offers{
+    border-radius: 3px 3px 0 0;
+    background: rgba(51,51,51,0.65);
+    color: $grey_2;
+    padding: 5px;
+  }
+  &__pre-offers{
+    margin-top: -25px;
+  }
+  &__img{
+    height: 170px;
+    img{
+      width: 70%;
+    }
+  }
+  &__titles{
+    padding: 20px 0;
+  }
+  &_title,&_company{
+    font-size: 18px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: inherit;
+  }
+  &__pangination{
+    margin-top: 100px;
+  }
+}
+#promo-card{
+  margin: 30px 0;
+}
+
+.promo-card {
+  &__btn{
+    width: 210px;
+    min-width:50px;
+    max-width: 100%;
+    padding: 0 10px;
+    .label{
+      display: inline-block;
+      width: 100%;
+    }
+    .code{
+      display: none;
+    }
+    &:hover{
+      background: $green_dark;
+    }
+    &[data-condition='active']{
+      background: none;
+      color: #333;
+      color: $green;
+      border: 2px dashed $green;
+      .label{
+        display: none;
+      }
+      .code{
+        display: inline-block;
+      }
+    }
+  }
+  &__text{
+    color: #666666;
+    margin-bottom: 20px;
+    &-after{
+      margin-bottom: 30px;
+      color: #666666;
+    }
+  }
+  &__date{
+    margin: 0;
+    color: #666666;
+    b{
+      color: #333;
+      margin-left: 10px;
+    }
+  }
+  &__item{
+    border-bottom: 0;
+    padding-bottom: 35px;
+    margin-bottom: 0;
+  }
+  &__shops-caption{
+    font-weight: 400;
+    margin-bottom: 22px;
+  }
+  &__sum{
+    font-weight: 400;
+    color: #666;
+    b{
+      color: #333;
+      margin-left: 10px;
+    }
+  }
+  &__similar{
+    margin-top: 20px;
+    background: none;
+    padding: 0;
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+    &-caption{
+      font-weight: 400;
+    }
+    &-item{
+      padding-left: 30px;
+      position: relative;
+      &:hover{
+        color: #f90;
+      }
+      &:before{
+        content: '';
+        background-image:url(/img/tag.svg);
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 7px;
+        position: absolute;
+      }
+    }
+  }
+  &__item_plshk{
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  &__logo {
+    background: #fff;
+    width: 125px;
+    border-radius: 0px 0px 3px 3px;
+    border-top: none;
+    margin-bottom: 0;
+    margin-top: -1px;
+    img {
+      width: 100%;
+    }
+  }
+  &__slash{
+    font-size: 24px;
+    color: #d6d6d6;
+    margin-right: 15px;
+  }
+  &__offers-link{
+    color: grey;
+    &:hover{
+      color: #333;
+    }
+  }
+  &__offers{
+    margin: 0;
+    margin-left: 20px
+  }
+  &__others{
+    margin-top: 20px;
+  }
+  &__worked{
+    margin-bottom: 20px;
+  }
+}
+
+.coups{
+  &__count{
+    color: #808080;
+    margin: 10px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__main-label{
+    text-transform: uppercase;
+    color: #808080;
+    padding: 10px 0;
+  }
+  &__filter label {
+    background: none;
+    color: grey;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 10px;
+    &:focus{
+      color: grey !important;
+      box-shadow: none !important;
+    }
+    &:hover, &.active,&:active{
+      background: none  !important;
+      border: none  !important;
+      color: #333  !important;
+      box-shadow: none !important;
+    }
+  }
+  &__rating label {
+      padding-left: 25px;
+      padding-right: 0;
+      background: none;
+      color: grey;
+      border: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      position: relative;
+      &.btn-like{
+        margin-right: 10px;
+        &:before {
+          content: ' ';
+          left: 0;
+          position: absolute;
+          //margin-top: -5px;
+          width: 16px;
+          height: 17px;
+          background-image: url('/img/like.svg');
+          background-size: cover;
+        }
+      }
+      &.btn-dislike:before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        margin-top: 5px;
+        width: 16px;
+        height: 17px;
+        background-image: url('/img/dislike.svg');
+        background-size: cover;
+      }
+      &:focus{
+        color: grey !important;
+        box-shadow: none !important;
+      }
+      &:hover{
+        background: none !important;
+        box-shadow: none !important;
+        &.btn-like:before {
+          background-image: url('/img/like_hover.svg');
+        }
+        &.btn-dislike:before {
+          background-image: url('/img/dislike_hover.svg');
+        }
+        background: none  !important;
+        border: none  !important;
+        color: #333  !important;
+        box-shadow: none !important;
+      }
+      &.active{
+        background: none !important;
+        box-shadow: none !important;
+        &.btn-like:before {
+          background-image: url('/img/like_active.svg');
+        }
+        &.btn-dislike:before {
+          background-image: url('/img/dislike_active.svg');
+        }
+      }
+  }
+  &__filter{
+    text-transform: uppercase;
+    color: #808080;
+    padding: 10px 0;
+    text-align: right;
+  }
+  &__big-item{
+    background: #F7F7F7;
+    padding: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    height: 670px;
+    position: relative;
+  }
+  &__item{
+    background: #F7F7F7;
+    padding: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  &__big-item-title{
+    color: #333333;
+    line-height: 1.2;
+    margin: 0;
+    font-size: 37.1px;
+  }
+  &__item-title{
+    color: #333333;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0;
+  }
+  &__item-p{
+      margin: 20px 0;
+      color: #666;
+      b{
+        color: #333;
+        margin-left: 10px;
+      }
+  }
+  &__item-min{
+      margin: 10px 0;
+      color: #666;
+      b{
+        color: #333;
+        margin-left: 10px;
+      }
+  }
+  &__to{
+    word-spacing: 10000px;
+    text-align: right;
+    font-size: 28.86px;
+    color: #666666;
+  }
+  &__day{
+    font-size: 144px;
+    color: #666666;
+    font-weight: bold;
+  }
+  &__time {
+    font-size: 28.86px;
+    color: #666666;
+  }
+  &__href{
+    padding: 10px;
+    background: $green;
+    color: #fff !important;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    .label{
+      display: inline-block;
+      width: 100%;
+    }
+    .code{
+      display: none;
+    }
+    &:hover{
+      background: $green_dark;
+    }
+    &[data-condition='active']{
+      background: $green_dark;
+      .label{
+        display: none;
+      }
+      .code{
+        display: inline-block;
+      }
+    }
+  }
+  &__hr{
+    margin: 10px 0;
+  }
+  &__after{
+    padding: 10px 0;
+  }
+  &__btn{
+    padding: 0;
+  }
+  &__like-count{
+    color: $green;
+    font-weight: bold;
+    padding: 0;
+  }
+  &__dislike-count{
+    color: #EB5757;
+    font-weight: bold;
+    padding: 0;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &__info {
+    position: absolute;
+    width: 100%;
+    margin-left: -40px;
+    padding: 10px 40px;
+    bottom: 0;
+  }
+  &__deadline{
+    margin-top: 36px;
+  }
+  &__work{
+    padding: 0 20px;
+    color: #666;
+  }
+}
+
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 1366px;
+    padding: 0 20px;
+  }
+}
+
+/*@media (min-width: 1250px){
+  .col-lg-4 {
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}*/
+
+@media (max-width: 1140px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 992px){
+  .promo-card {
+    &__similar{
+      min-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .promo-card{
+    &__similar{
+      margin-top: 30px;
+      padding: 0 10px;
+    }
+    &__sum{
+      margin-bottom: 20px;
+    }
+    &__btn{
+      margin-bottom:20px;
+    }
+  }
+  .cards {
+    &__item{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+
+}
+
+@media (max-width: 540px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

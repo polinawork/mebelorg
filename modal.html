@@ -1,0 +1,308 @@
+//= template/header.html
+
+		<section id="sign-in">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-modal">Sign in</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  				<div class="modal-dialog modal-dialog-centered modal-window sign-in" role="document">
+    				<div class="modal-content modal-window__content">
+      					<button type="button" class="modal-window__button-close close" data-dismiss="modal" aria-label="Close"></button>
+	      				<h4>Вход в личный кабинет</h4>
+						<form>
+						    <input type="email" name="email" placeholder="Адрес электронной почты:">
+							<div class="modal-window__form-password">
+								<input id="password-sign-in" type="password" name="password" placeholder="Пароль: ">
+								<button type="button" id="show-password-sign-in">
+									<svg class="eye-pass" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.627 5.42018C21.3362 3.76977 19.6642 2.40463 17.7918 1.47243C15.8805 0.520839 13.8243 0.0271015 11.6778 0.00120964C11.6187 -0.000402999 11.3813 -0.000402999 11.3222 0.00120964C9.17573 0.0271463 7.11948 0.520839 5.20815 1.47243C3.33577 2.40463 1.66383 3.76973 0.372962 5.42018C-0.124321 6.05596 -0.124321 6.94404 0.372962 7.57982C1.66379 9.23022 3.33577 10.5954 5.20815 11.5276C7.11948 12.4792 9.17568 12.9729 11.3222 12.9988C11.3813 13.0004 11.6187 13.0004 11.6778 12.9988C13.8242 12.9729 15.8805 12.4792 17.7918 11.5276C19.6642 10.5954 21.3362 9.23027 22.627 7.57982C23.1243 6.94395 23.1243 6.05596 22.627 5.42018ZM5.62615 10.6928C3.8778 9.82233 2.31641 8.54745 1.11076 7.00599C0.877748 6.70805 0.877748 6.29195 1.11076 5.99401C2.31636 4.45255 3.87775 3.17767 5.62615 2.3072C6.12272 2.06002 6.62979 1.84625 7.14626 1.66528C5.81756 2.8563 4.98045 4.58237 4.98045 6.49998C4.98045 8.41768 5.81761 10.1439 7.14644 11.3349C6.62997 11.1539 6.12276 10.94 5.62615 10.6928ZM11.5 12.0682C8.421 12.0682 5.91608 9.57031 5.91608 6.49993C5.91608 3.42955 8.421 0.931704 11.5 0.931704C14.579 0.931704 17.084 3.4296 17.084 6.49998C17.084 9.57036 14.579 12.0682 11.5 12.0682ZM21.8893 7.00594C20.6837 8.54741 19.1223 9.82229 17.3739 10.6928C16.8779 10.9397 16.3712 11.1525 15.8553 11.3333C17.1831 10.1423 18.0196 8.41678 18.0196 6.49993C18.0196 4.58205 17.1823 2.85576 15.8533 1.66474C16.3699 1.84576 16.8772 2.05979 17.3739 2.30711C19.1223 3.17758 20.6837 4.45246 21.8893 5.99392C22.1223 6.2919 22.1223 6.70801 21.8893 7.00594Z" fill="#999999"/>
+									<path d="M2.38961 3.82775e-08C1.07197 3.82775e-08 -3.29016e-07 1.06896 -3.29016e-07 2.3829C-3.29016e-07 3.69685 1.07197 4.7658 2.38961 4.7658C3.70725 4.7658 4.77922 3.69685 4.77922 2.3829C4.77926 1.06896 3.7073 3.82775e-08 2.38961 3.82775e-08ZM2.38961 3.83285C1.58789 3.83285 0.935584 3.18246 0.935584 2.3829C0.935584 1.58339 1.5878 0.933003 2.38961 0.933003C3.19133 0.933003 3.84359 1.58339 3.84359 2.3829C3.84364 3.18246 3.19133 3.83285 2.38961 3.83285Z" transform="translate(9.11084 4.11719)" fill="#999999"/>
+									</svg>
+								</button>
+							</div>
+							<a class="modal-window__forget-password" href="#password-recovery-modal" data-toggle="modal" data-dismiss="modal">Забыли пароль?</a>
+						</form>
+						<div class="modal-window__social">
+							<h5>Войти с помощью соц. сетей</h5>
+							<div class="modal-window__social-icons">
+								<a href="#"><img src="img/mfacebook.svg" alt=""></a>
+								<a href="#"><img src="img/s_vk.svg" alt=""></a>
+								<a href="#"><img src="img/mgoogle-plus-2.svg" alt=""></a>
+								<a href="#"><img src="img/mtwitter.svg" alt=""></a>
+								<a href="#"><img src="img/odnoklassniki.svg" alt=""></a>
+							</div>
+						</div>
+						<button class="modal-window__button-go">Войти</button>
+						<h5 class="modal-window__transition">Не зарегистрированы?</h5>
+						<button type="button" class="modal-window__button-create-account" data-toggle="modal" data-dismiss="modal" data-target="#sign-out-modal">Создать аккаунт</button>
+    				</div>
+  				</div>
+			</div>
+		</section>
+
+		<section id="password-recovery">
+			<!-- Modal -->
+			<div class="modal fade" id="password-recovery-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  				<div class="modal-dialog modal-dialog-centered modal-window password-recovery" role="document">
+    				<div class="modal-content modal-window__content">
+      					<button type="button" class="modal-window__button-close close" data-dismiss="modal" aria-label="Close"></button>
+	      				<h4>Восстановления пароля</h4>
+						<form>
+						    <input type="email" name="email" placeholder="Адрес электронной почты:">
+						    <p>Нажимая «Создать учетную запись», вы подтверждаете, что прочитали и соглашаетесь с <a href="#" class="modal-window__text-bold">Правилами порталa</a> и <a href="#" class="modal-window__text-bold">Политикой конфиденциальности.</a></p>
+						</form>
+						<button class="modal-window__button-go">Получить пароль</button>
+    				</div>
+  				</div>
+			</div>
+		</section>
+
+		<section id="sign-out">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-out-modal">Sign out</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="sign-out-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  				<div class="modal-dialog modal-dialog-centered modal-window sign-out" role="document">
+    				<div class="modal-content modal-window__content">
+      					<button type="button" class="modal-window__button-close close" data-dismiss="modal" aria-label="Close"></button>
+	      				<h4>Регистрация нового пользователя</h4>
+						<form>
+						    <input type="text" name="name" placeholder="Имя:">
+						    <input type="text" name="last-name" placeholder="Фамилия:">
+						    <input type="email" name="email" placeholder="Адрес электронной почты:">
+						    <div class="modal-window__form-password">
+								<input id="password-sign-out" type="password" name="password" placeholder="Придумайте пароль: ">
+								<button type="button" id="show-password-sign-out">
+									<svg class="eye-pass" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.627 5.42018C21.3362 3.76977 19.6642 2.40463 17.7918 1.47243C15.8805 0.520839 13.8243 0.0271015 11.6778 0.00120964C11.6187 -0.000402999 11.3813 -0.000402999 11.3222 0.00120964C9.17573 0.0271463 7.11948 0.520839 5.20815 1.47243C3.33577 2.40463 1.66383 3.76973 0.372962 5.42018C-0.124321 6.05596 -0.124321 6.94404 0.372962 7.57982C1.66379 9.23022 3.33577 10.5954 5.20815 11.5276C7.11948 12.4792 9.17568 12.9729 11.3222 12.9988C11.3813 13.0004 11.6187 13.0004 11.6778 12.9988C13.8242 12.9729 15.8805 12.4792 17.7918 11.5276C19.6642 10.5954 21.3362 9.23027 22.627 7.57982C23.1243 6.94395 23.1243 6.05596 22.627 5.42018ZM5.62615 10.6928C3.8778 9.82233 2.31641 8.54745 1.11076 7.00599C0.877748 6.70805 0.877748 6.29195 1.11076 5.99401C2.31636 4.45255 3.87775 3.17767 5.62615 2.3072C6.12272 2.06002 6.62979 1.84625 7.14626 1.66528C5.81756 2.8563 4.98045 4.58237 4.98045 6.49998C4.98045 8.41768 5.81761 10.1439 7.14644 11.3349C6.62997 11.1539 6.12276 10.94 5.62615 10.6928ZM11.5 12.0682C8.421 12.0682 5.91608 9.57031 5.91608 6.49993C5.91608 3.42955 8.421 0.931704 11.5 0.931704C14.579 0.931704 17.084 3.4296 17.084 6.49998C17.084 9.57036 14.579 12.0682 11.5 12.0682ZM21.8893 7.00594C20.6837 8.54741 19.1223 9.82229 17.3739 10.6928C16.8779 10.9397 16.3712 11.1525 15.8553 11.3333C17.1831 10.1423 18.0196 8.41678 18.0196 6.49993C18.0196 4.58205 17.1823 2.85576 15.8533 1.66474C16.3699 1.84576 16.8772 2.05979 17.3739 2.30711C19.1223 3.17758 20.6837 4.45246 21.8893 5.99392C22.1223 6.2919 22.1223 6.70801 21.8893 7.00594Z" fill="#999999"/>
+									<path d="M2.38961 3.82775e-08C1.07197 3.82775e-08 -3.29016e-07 1.06896 -3.29016e-07 2.3829C-3.29016e-07 3.69685 1.07197 4.7658 2.38961 4.7658C3.70725 4.7658 4.77922 3.69685 4.77922 2.3829C4.77926 1.06896 3.7073 3.82775e-08 2.38961 3.82775e-08ZM2.38961 3.83285C1.58789 3.83285 0.935584 3.18246 0.935584 2.3829C0.935584 1.58339 1.5878 0.933003 2.38961 0.933003C3.19133 0.933003 3.84359 1.58339 3.84359 2.3829C3.84364 3.18246 3.19133 3.83285 2.38961 3.83285Z" transform="translate(9.11084 4.11719)" fill="#999999"/>
+									</svg>
+								</button>
+							</div>
+							<p>Нажимая «Создать учетную запись», вы подтверждаете, что прочитали и соглашаетесь с <a href="#" class="modal-window__text-bold">Правилами порталa</a> и <a href="#" class="modal-window__text-bold">Политикой конфиденциальности.</a></p>
+						</form>
+						<button class="modal-window__button-go">Зарегистрироваться</button>
+						<h5 class="modal-window__transition">Уже зарегистрированы?</h5>
+						<button type="button" class="modal-window__button-create-account" data-toggle="modal" data-dismiss="modal" data-target="#sign-in-modal">Войти</button>
+    				</div>
+  				</div>
+			</div>
+		</section>
+
+		<section id="feedback-product">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedback-product-modal">Feedback</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="feedback-product-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  				<div class="modal-dialog modal-dialog-centered modal-window feedback-product" role="document">
+    				<div class="modal-content modal-window__content">
+      					<button type="button" class="modal-window__button-close close" data-dismiss="modal" aria-label="Close"></button>
+	      				<h4>Оставить отзыв о товаре</h4>
+	      				<form>
+	      					<div class="modal-window__grade">
+								<span>Оцените товар</span>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+							</div>
+							<div id="feedback-product-accordion" class="accordion feedback-accordion">
+							<div class="card feedback-accordion__card">
+						    	<div class="card-header feedback-accordion__header" id="feedback-product-comments-card">
+							        <button class="btn feedback-accordion__button" type="button" data-toggle="collapse" data-target="#feedback-product-comments" aria-expanded="true" aria-controls="feedback-product-comments">
+							          	<span>Комментарий</span>
+							          	<svg class="feedback-accordion__arrow" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<line y1="-0.5" x2="8.14294" y2="-0.5" transform="translate(11.0002 6) scale(0.956111 1.04204) rotate(-135)" stroke="#333333"/>
+											<line y1="-0.5" x2="7.23131" y2="-0.5" transform="translate(4.88892 0.671875) scale(0.956111 1.04204) rotate(135)" stroke="#333333"/>
+										</svg>
+							        </button>
+							    </div>
+
+	    						<div id="feedback-product-comments" class="collapse show" aria-labelledby="feedback-product-comments-card" data-parent="#feedback-product-accordion">
+	      							<div class="card-body feedback-accordion__body">
+	        							<textarea name="comments" id="comments"></textarea>	
+	      							</div>
+	    						</div>
+	 						</div>
+  							<div class="card feedback-accordion__card">
+    							<div class="card-header feedback-accordion__header" id="feedback-product-advantages-card">
+        							<button class="btn collapsed feedback-accordion__button" type="button" data-toggle="collapse" data-target="#feedback-product-advantages" aria-expanded="false" aria-controls="feedback-product-advantages">
+        								<span>Достоинства</span>
+        								<svg class="feedback-accordion__arrow feedback-accordion__arrow_down" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<line y1="-0.5" x2="8.14294" y2="-0.5" transform="translate(11.0002 6) scale(0.956111 1.04204) rotate(-135)" stroke="#333333"/>
+											<line y1="-0.5" x2="7.23131" y2="-0.5" transform="translate(4.88892 0.671875) scale(0.956111 1.04204) rotate(135)" stroke="#333333"/>
+										</svg>
+        							</button>
+    							</div>
+    							<div id="feedback-product-advantages" class="collapse" aria-labelledby="feedback-product-advantages-card" data-parent="#feedback-product-accordion">
+      								<div class="card-body feedback-accordion__body">
+	        							<textarea name="advantages" id="advantages"></textarea>	
+      								</div>
+    							</div>
+  							</div>
+  							<div class="card feedback-accordion__card">
+    							<div class="card-header feedback-accordion__header" id="feedback-product-disadvantages-card">
+        							<button class="btn collapsed feedback-accordion__button" type="button" data-toggle="collapse" data-target="#feedback-product-disadvantages" aria-expanded="false" aria-controls="feedback-product-disadvantages">
+        								<span>Недостатки</span>
+        								<svg class="feedback-accordion__arrow feedback-accordion__arrow_down" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<line y1="-0.5" x2="8.14294" y2="-0.5" transform="translate(11.0002 6) scale(0.956111 1.04204) rotate(-135)" stroke="#333333"/>
+											<line y1="-0.5" x2="7.23131" y2="-0.5" transform="translate(4.88892 0.671875) scale(0.956111 1.04204) rotate(135)" stroke="#333333"/>
+										</svg>
+        							</button>
+    							</div>
+    							<div id="feedback-product-disadvantages" class="collapse" aria-labelledby="feedback-product-disadvantages-card" data-parent="#feedback-product-accordion">
+      								<div class="card-body feedback-accordion__body">
+	        							<textarea name="disadvantages" id="disadvantages"></textarea>	
+      								</div>
+    							</div>
+  							</div>
+  							</div>
+  						</form>
+  						<button class="modal-window__button-go">Оставить отзыв</button>
+					</div>
+  				</div>
+			</div>
+		</section>
+
+
+		<section id="feedback-seller">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedback-seller-modal">Feedback Seller</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="feedback-seller-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  				<div class="modal-dialog modal-dialog-centered modal-window feedback-seller" role="document">
+    				<div class="modal-content modal-window__content">
+      					<button type="button" class="modal-window__button-close close" data-dismiss="modal" aria-label="Close"></button>
+	      				<h4>Оставить отзыв о продавце</h4>
+	      				<div class="modal-window__name-company">
+	      					<img src="img/Group 6.png" alt="">
+	      					<span>Первая мебельная</span>
+	      				</div>
+	      				<form>
+							<div class="modal-window__grade">
+								<span>Оцените продавца</span>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+								<div class="modal-window__star">
+									<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.09246 -1.36077e-08L11.9018 5.59599L18.1846 6.49359L13.6384 10.8492L14.7115 17L9.09246 14.0962L3.47305 17L4.54623 10.8492L0 6.49359L6.28276 5.59599L9.09246 -1.36077e-08Z" fill="#999999"/>
+									</svg>
+								</div>
+							</div>
+							<div id="feedback-seller-accordion" class="accordion feedback-accordion">
+								<div class="card feedback-accordion__card">
+							    	<div class="card-header feedback-accordion__header" id="feedback-seller-comments-card">
+								        <button class="btn feedback-accordion__button" type="button" data-toggle="collapse" data-target="#feedback-seller-comments" aria-expanded="true" aria-controls="feedback-seller-comments">
+								          	<span>Комментарий</span>
+								          	<svg class="feedback-accordion__arrow" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<line y1="-0.5" x2="8.14294" y2="-0.5" transform="translate(11.0002 6) scale(0.956111 1.04204) rotate(-135)" stroke="#333333"/>
+												<line y1="-0.5" x2="7.23131" y2="-0.5" transform="translate(4.88892 0.671875) scale(0.956111 1.04204) rotate(135)" stroke="#333333"/>
+											</svg>
+								        </button>
+								    </div>
+
+		    						<div id="feedback-seller-comments" class="collapse show" aria-labelledby="feedback-seller-comments-card" data-parent="#feedback-seller-accordion">
+		      							<div class="card-body feedback-accordion__body">
+		        							<textarea name="comments" id="comments"></textarea>	
+		      							</div>
+		    						</div>
+		 						</div>
+	  							<div class="card feedback-accordion__card">
+	    							<div class="card-header feedback-accordion__header" id="feedback-seller-advantages-card">
+	        							<button class="btn collapsed feedback-accordion__button" type="button" data-toggle="collapse" data-target="#feedback-seller-advantages" aria-expanded="false" aria-controls="feedback-seller-advantages">
+	        								<span>Достоинства</span>
+	        								<svg class="feedback-accordion__arrow feedback-accordion__arrow_down" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<line y1="-0.5" x2="8.14294" y2="-0.5" transform="translate(11.0002 6) scale(0.956111 1.04204) rotate(-135)" stroke="#333333"/>
+												<line y1="-0.5" x2="7.23131" y2="-0.5" transform="translate(4.88892 0.671875) scale(0.956111 1.04204) rotate(135)" stroke="#333333"/>
+											</svg>
+	        							</button>
+	    							</div>
+	    							<div id="feedback-seller-advantages" class="collapse" aria-labelledby="feedback-seller-advantages-card" data-parent="#feedback-seller-accordion">
+	      								<div class="card-body feedback-accordion__body">
+		        							<textarea name="advantages" id="advantages"></textarea>	
+	      								</div>
+	    							</div>
+	  							</div>
+	  							<div class="card feedback-accordion__card">
+	    							<div class="card-header feedback-accordion__header" id="feedback-seller-disadvantages-card">
+	        							<button class="btn collapsed feedback-accordion__button" type="button" data-toggle="collapse" data-target="#feedback-seller-disadvantages" aria-expanded="false" aria-controls="feedback-seller-disadvantages">
+	        								<span>Недостатки</span>
+	        								<svg class="feedback-accordion__arrow feedback-accordion__arrow_down" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<line y1="-0.5" x2="8.14294" y2="-0.5" transform="translate(11.0002 6) scale(0.956111 1.04204) rotate(-135)" stroke="#333333"/>
+												<line y1="-0.5" x2="7.23131" y2="-0.5" transform="translate(4.88892 0.671875) scale(0.956111 1.04204) rotate(135)" stroke="#333333"/>
+											</svg>
+	        							</button>
+	    							</div>
+	    							<div id="feedback-seller-disadvantages" class="collapse" aria-labelledby="feedback-seller-disadvantages-card" data-parent="#feedback-seller-accordion">
+	      								<div class="card-body feedback-accordion__body">
+		        							<textarea name="disadvantages" id="disadvantages"></textarea>	
+	      								</div>
+	    							</div>
+	  							</div>
+	  						</div>
+	  					</form>
+	  					<button class="modal-window__button-go">Оставить отзыв</button>
+					</div>
+  				</div>
+			</div>
+		</section>
+
+		<section id="questions-about-product">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#questions-about-product-modal">Questions</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="questions-about-product-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  				<div class="modal-dialog modal-dialog-centered modal-window questions-about-product" role="document">
+    				<div class="modal-content modal-window__content">
+      					<button type="button" class="modal-window__button-close close" data-dismiss="modal" aria-label="Close"></button>
+	      				<h4>У вас возник вопрос по товару?</h4>
+						<form>
+							<div class="modal-window__message">Задайте его ниже — продавец ответит как можно скорее</div>
+						   <textarea name="questions" class="modal-window__textarea" id="questions-about-product-textarea"></textarea>
+						</form>
+						<button class="modal-window__button-go">Задать вопрос</button>
+    				</div>
+  				</div>
+			</div>
+		</section>
+
+//= template/footer.html

@@ -1,0 +1,44 @@
+
+
+.block-help {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  // flex-basis: 18%;
+  padding: 10px;
+  min-height: 100%;
+  text-align: center;
+  background: url("../img/block-help.png") center center no-repeat;
+  // background: url(../img/block-help.png) center right no-repeat;
+  background-size: cover;
+
+  &.product,
+  &.product-item {
+    &:hover {
+      box-shadow: none;
+
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  &__text {
+    font-size: 12px;
+  }
+
+  &__btn {
+    font-size: 12px;
+    margin: auto 10px 20px;
+  }
+}

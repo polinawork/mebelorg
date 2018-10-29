@@ -1,0 +1,30 @@
+.promoshop-header{
+  margin-top: 20px;
+    &__text{
+      margin-bottom: 20px;
+      line-height: 24px;
+    }
+    &__info{
+      height: 100%;
+      &-pic{
+        height: 100%;
+        border-radius: 3px;
+        //border: 1px solid #eaeaea;
+        margin-bottom: 20px;
+        img{
+          max-width: 90%;
+        }
+      }
+      &-name{
+        margin-bottom: 20px;
+      }
+    }
+}
+.review-block{
+  display: inline-block;
+  margin-left: 10px;
+}
+.filter-list_btn{
+  margin-top: 20px;
+  width: 100%;
+}

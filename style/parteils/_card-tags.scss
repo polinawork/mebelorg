@@ -1,0 +1,22 @@
+
+#card-tags {
+	& h2 {
+		margin-bottom: 20px;
+		& a {
+			color: #333;
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+	& .row {
+		margin: 0;
+	}
+	& .tag {
+		font-size: 12px;
+		margin: 0;
+		margin-right: 5px;
+		margin-bottom: 10px;
+    	display: inline-block;
+	}
+}

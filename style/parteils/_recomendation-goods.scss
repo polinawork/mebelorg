@@ -1,0 +1,50 @@
+.recomendation-goods{
+  padding: 10px 0;
+  &__title{
+    font-size: 28px;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  &__item{
+    padding: 20px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 14px;
+    &-pic {
+      padding: 10px;
+      height: 10em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        max-width: 50%;
+      }
+    }
+    &-title{
+      color: #333;
+      margin-bottom: 10px;
+    }
+    &-stars{
+      color: #FF9900;
+      *{
+        margin-right: 5px;
+      }
+    }
+    &-count{
+      margin-top: -2px;
+      color: #333;
+    }
+    &-price{
+      color: #333;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .recomendation-goods{
+    &__title {
+      font-size: 2em;
+      line-height: 1.2em;
+    }
+  }
+}

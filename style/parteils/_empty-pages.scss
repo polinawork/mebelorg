@@ -1,0 +1,21 @@
+
+.empty {
+	&-page {
+		text-align: center;
+		& h1 {
+			text-align: left;
+		}
+		& h2 {
+			line-height: 34px;
+		}
+		.cta-btn__full {
+			display: block;
+			text-align: center;
+			line-height: 40px;
+		}
+	}
+	&-recommendation {
+		padding-top: 0px;
+		margin-bottom: 60px;
+	}
+}

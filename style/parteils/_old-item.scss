@@ -1,0 +1,171 @@
+.item
+{
+	width:204px;
+	display:block;
+	color:inherit;
+	margin-bottom:40px;
+	position:relative;
+	z-index:1
+}
+.item img
+{
+	width:100%}.item__title
+{
+	color:#333;
+	line-height:20px;
+	margin:10px 0 13px 0;
+	display:block
+}
+.item__link
+{
+	position:relative;
+	opacity:.99;
+	display:block;
+	z-index:1
+}
+.item__bottom
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+-ms-flex-flow:row wrap;
+	flex-flow:row wrap;
+-webkit-box-pack:justify;
+-ms-flex-pack:justify;
+	justify-content:space-between
+}
+.item__overlay
+{
+	display:block;
+	width:234px;
+	padding:10px;
+	height:150%;
+	position:absolute;
+	top:-10px;
+	background:#fff;
+	box-shadow:0 4px 15px rgba(0,0,0,.25);
+	left:-16px;
+	z-index:2;
+	opacity:0
+}
+.item__overlay_bottom:before
+{
+	display:block;
+	content:'';
+	width:200px;
+	height:1px;
+	background:#ccc;
+	margin:20px auto 8px auto
+}
+.item__overlay_bottom
+{
+	position:absolute;
+	bottom:0;
+	padding-bottom:10px
+}
+.item:hover .item__overlay
+{
+	opacity:1;
+	transition:.3s ease
+}
+.item__overlay p
+{
+	font-size:12px;
+	line-height:28px
+}
+.item__img
+{
+	position:relative
+}
+.item__img_overlay
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.5);
+	opacity:0
+}
+.item__img_compare
+{
+	width:13px;
+	height:14px
+}
+.item__img_sale
+{
+	position:absolute;
+	width:47px;
+	height:22px;
+	color:#fff;
+	background:#d21a39;
+	top:10px;
+	left:0;
+	text-align:center
+}
+.item__img_wrap
+{
+	width:20px;
+	height:20px;
+	background:#fff;
+	border-radius:90px;
+	border:1px solid #ccc;
+	display:flex;
+	align-items:center;
+	position:absolute;
+	top:10px;
+	opacity:.99;
+	right:40px
+}
+.item__img_wrap:focus
+{
+	background:#ffbb25
+}
+.item__img_wrap:last-child
+{
+	right:10px
+}
+.item__img_like
+{
+	height:11px;
+	width:13px
+}
+.item__img_wrap:hover
+{
+	border-color:#ffbb25
+}
+.item__title:hover
+{
+	color:#333
+}
+.item__overlay:hover
+{
+	z-index:5
+}
+.item:hover
+{
+	z-index:6
+}
+.item:hover .item__img
+{
+	z-index:8
+}
+.item__img_overlay:hover
+{
+	opacity:1;
+	transition:.3s ease
+}
+
+.item__last-price
+{
+	text-decoration:line-through;
+	font-size:12px;
+	line-height:14px
+}
+.item__now-price
+{
+	font-weight:700;
+	line-height:16px
+}

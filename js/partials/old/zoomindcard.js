@@ -1,0 +1,1 @@
+$(".xzoom").xzoom({tint: '#999', Xoffset: 10});

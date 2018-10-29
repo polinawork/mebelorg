@@ -1,0 +1,45 @@
+
+
+.bread-crumbs {
+	margin-top:30px;
+	display:flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	&__list {
+		display:flex;
+		flex-flow: row wrap
+	}
+}
+
+.bread {
+	&__link {
+		font-size:12px;
+		line-height:21px;
+		position:relative;
+		color: #999;
+		margin-right: 30px;
+		transition: 0.3s ease;
+		&:after {
+			content:'';
+			display:block;
+			width:5px;
+			height:5px;
+			border-radius:55px;
+			background:#999;
+			left: -17px;
+			top:5px;
+			position:absolute;
+		}
+		&:hover {
+			color: #333;
+			transition: 0.3s ease;
+		}
+		&_active {
+			color: #333;
+		}
+	}
+	&__home:after {
+		content: none;
+	}
+}

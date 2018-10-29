@@ -1,0 +1,19 @@
+
+.label {
+	width: 88px;
+	text-align: center;
+	padding: 3px 0;
+	&__stock {
+		color: #0B5B2D;
+		background: #DAFFEA;
+		margin-right: 15px;
+	}
+	&__sale {
+		color: #5B0B0B;
+		background: #FFDCDA;
+	}
+	&__ready {
+		background: #ffe7bc;
+		color: #bb7803;
+	}
+}

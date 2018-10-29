@@ -1,0 +1,31 @@
+.slider__arrows {
+	position:absolute;
+	width:23px;
+	height:23px;
+	border-radius:90px;
+	text-align:center;
+	line-height:23px;
+	background:#fff;
+	box-shadow:0 4px 4px rgba(0,0,0,.25);
+	cursor:pointer;
+	top:50%;
+	margin-top:-12px;
+	opacity:0;
+	transition:.3s ease;
+	& img {
+		display:inline;
+	}
+	&:hover {
+		opacity:1;
+		transition:.3s ease;
+	}
+}
+
+.slider__arrow {
+	&_prev {
+		left:-10px;
+	}
+	&_next {
+		right:-10px
+	}
+}

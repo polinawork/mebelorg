@@ -1,0 +1,62 @@
+.d-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex
+}
+
+
+/* overlay */
+.overlay-cart,
+.overlay-full,
+.overlay-subs {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.cms-enter__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #4F4F4F;
+  z-index: 100;
+}
+/* Scrollbar */
+.scrollbar::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  background-color: #FFBB25;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
